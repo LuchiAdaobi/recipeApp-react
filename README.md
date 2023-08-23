@@ -26,8 +26,7 @@ You'll need to obtain an API key and app ID from Edamam by signing up on their w
 
 Replace the API_KEY and APP_ID values in App.js with your Edamam API key and app ID:
 
-```jsx
-Copy code```
+``
 const API_KEY = 'your-api-key';
 const APP_ID = 'your-app-id';```
 
