@@ -28,7 +28,8 @@ Replace the API_KEY and APP_ID values in App.js with your Edamam API key and app
 
 ```
 const API_KEY = 'your-api-key';
-const APP_ID = 'your-app-id';```
+const APP_ID = 'your-app-id';
+```
 
 ## Start the app:
 
