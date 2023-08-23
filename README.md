@@ -26,7 +26,7 @@ You'll need to obtain an API key and app ID from Edamam by signing up on their w
 
 Replace the API_KEY and APP_ID values in App.js with your Edamam API key and app ID:
 
-``
+```
 const API_KEY = 'your-api-key';
 const APP_ID = 'your-app-id';```
 
@@ -43,7 +43,7 @@ In the app's search bar, enter a query for the recipe you want to search for (e.
 
 The app will display a list of recipes matching the search query, along with their ingredients and calorie information.
 
-# Components
+## Components
 
 ## App.js
 
@@ -55,9 +55,9 @@ A component that displays individual recipe details, including title, ingredient
 
 ## Technologies Used
 
-React
-Vite
-Edamam API
+- React
+- Vite
+- Edamam API
 
 
 
