@@ -28,6 +28,24 @@ function App() {
    }
  };
 
+
+// const getRecipes = useCallback( async () => {
+//   try {
+//     const response = await fetch(
+//       `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${API_KEY}`
+//       );
+//       const data = await response.json();
+//       setRecipes(data.hits);
+//       console.log(data.hits);
+//     } catch (error) {
+//       console.error("Error fetching recipes:", error);
+//     }
+//   }, [query,APP_ID,API_KEY])
+  
+//   useEffect(() => {
+//       getRecipes();
+//     },[query,getRecipes])
+
 const updateSearch = e => {
   setSearch(e.target.value);
 }

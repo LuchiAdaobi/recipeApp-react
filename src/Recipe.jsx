@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 export default function Recipe({ title, calories, image, ingredients }) {
   return (
