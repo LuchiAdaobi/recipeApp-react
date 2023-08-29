@@ -22,7 +22,6 @@ function App() {
      );
      const data = await response.json();
      setRecipes(data.hits);
-     console.log(data.hits);
    } catch (error) {
      console.error("Error fetching recipes:", error);
    }
@@ -59,22 +58,33 @@ const getSearch = e => {
   return (
     <div className="app">
       <form className="search-form" onSubmit={getSearch}>
-        <input className="search-bar" type="text" value={search} onChange={updateSearch}/>
+        <input
+          className="search-bar"
+          type="text"
+          value={search}
+          onChange={updateSearch}
+        />
         <button className="search-button" type="submit">
           Search
         </button>
       </form>
-      <div className='recipes'>
-      {recipes.map((recipe) => (
-        <Recipe
-          key={recipe.recipe.label}
-          title={recipe.recipe.label}
-          calories={recipe.recipe.calories}
-          image={recipe.recipe.image}
-          ingredients={recipe.recipe.ingredients}
-        />
-        ))}
+      <div className="recipes">
+        <div className="recipes">
+          {recipes.length === 0 ? (
+            <h2 className='no-recipe'>No recipe available</h2>
+          ) : (
+            recipes.map((recipe) => (
+              <Recipe
+                key={recipe.recipe.label}
+                title={recipe.recipe.label}
+                calories={recipe.recipe.calories}
+                image={recipe.recipe.image}
+                ingredients={recipe.recipe.ingredients}
+              />
+            ))
+          )}
         </div>
+      </div>
     </div>
   );
 }
